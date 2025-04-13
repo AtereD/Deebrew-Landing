@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.containers {
+  padding: 15px;
+  background-position: center;
+}
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1240px;
+  --color-primary: #100e0e;
+  --color-secondary: #787f8a;
+  --color-accent: #c7a17a;
+  --color-hover: #a08161;
+}
+
+@theme inline {
+  --font-primary:var(--font-cormorant_upright);
+  --font-secondary:var(--font-open_sans);
+}
+
+@layer base {
+  /* * {
+    @apply scroll-smooth;
+  } */
+  body {
+    @apply font-secondary text-secondary leading-relaxed
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary font-primary
+  }
+  .h1 {
+    @apply text-[70px] xl:text-[150px] leading-[1.1] font-semibold
+  }
+  .h2 {
+    @apply text-[56px] xl:text-[80px] leading-[1.2] font-bold
+  }
+.btn {
+  @apply min-w-[156px] h-[54px] px-6 bg-accent hover:bg-hover text-primary text-[13px] uppercase font-semibold tracking-[.15em] transition-all
+}
+.bg-hero {
+  @apply bg-[url('/assets/hero-overlay.png')]
+}
+}
+
+
+/* .hero{
+  background-image: url('/assets/hero-overlay.png');
+} */
+.bg-opening-hours {
+  background-image: url('/assets/opening-hours/bg.png');
+}
+.bg-footer{
+  background-image: url('/assets/footer/bg.png');
+}
+
+/* swiper navigation eroor styles */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #100e0e;  
+  font-size: 2rem !important;
+}
