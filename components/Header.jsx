@@ -9,7 +9,7 @@ const Header = () => {
   const [navActive, setNavActive] = useState(false);
 
   return (
-    <header className="absolute top-[15px] left-0 right-0 z-[60] ">
+    <header className="absolute md:top-[15px] left-0 right-0 z-[60] ">
       <div className="containers mx-auto">
         <div
           className="flex justify-between items-center

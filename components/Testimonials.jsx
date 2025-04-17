@@ -29,14 +29,14 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="h-[100vh] xl:h-[70vh] ">
+    <section className="h-full xl:h-[70vh] ">
       <div className="containers mx-auto h-full flex items-center">
         <Swiper navigation={true} modules={[Navigation]} className="h-[400px]">
           {testimonials.map((person, index) => {
             return (
               <SwiperSlide key={index} className="w-full h-full">
                 <div className="flex justify-center h-full xl:pt-14">
-                  <div className="max-w-[60%] text-primary">
+                  <div className="md:max-w-[60%] max-w-[80%] text-primary">
                     <IoMdQuote className="text-6xl text-primary mb-12 mx-auto " />
                     <p className="text-2xl font-secondaary text-center mb-8">
                       {person.message}

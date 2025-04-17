@@ -67,8 +67,8 @@ const About = () => {
                 key={index}
                 className="xl:w-full xl:h-full flex flex-col justify-center items-center relative w-screen h-screen"
               >
-                <div className="containers mx-auto xl:w-full ">
-                  <div className="flex gap-[30px] relative w-full justify-center ">
+                <div className="containers mx-auto xl:w-full">
+                  <div className="flex gap-[30px] relative w-full justify-center pt-6 md:pt-0">
                     {/* text */}
                     <div className="flex flex-col justify-center items-center w-1/2 flex-1 xl:flex-auto">
                       <Badge containerStyles="w-[180px] h-[180px]" />
@@ -88,11 +88,11 @@ const About = () => {
                         </div>
 
                         {/* description */}
-                        <p className="leading-relaxed mb-16 px-8 xl:px-0">
+                        <p className="sm:leading-relaxed mb-16 px-6 xl:px-0 text-sm sm:text-base">
                           {item.description}
                         </p>
                         {/* btn */}
-                        <button className="btn">See more</button>
+                        <button className="btn mb-8 sm:mb-0">See more</button>
                       </div>
                     </div>
                     {/* image */}

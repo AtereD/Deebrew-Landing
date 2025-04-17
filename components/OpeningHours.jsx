@@ -17,7 +17,7 @@ const OpeningHours = () => {
             <div className='z-20 flex flex-col items-center justify-center'>
                 <h2 className='h2 text-white my-4'>Opening Hours</h2>
                 <Separator bg="accent"/>
-                <div className='lg:mt-12 relative w-[300px] h-[220px] xl:w-[470px] xl:h-[200px]'>
+                <div className='lg:mt-12 relative sm:w-[300px] h-[220px] xl:w-[470px] xl:h-[200px] w-full px-4 sm:px-0'>
                     <Image src="/assets/opening-hours/program-badge.svg" fill alt="" priority quality={100} className='object-contain'/>
                 </div>
             </div>

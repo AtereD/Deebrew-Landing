@@ -35,7 +35,7 @@
     @apply text-[70px] xl:text-[150px] leading-[1.1] font-semibold
   }
   .h2 {
-    @apply text-[56px] xl:text-[80px] leading-[1.2] font-bold
+    @apply sm:text-[56px] xl:text-[80px] leading-[1.2] font-bold text-[40px];
   }
 .btn {
   @apply min-w-[156px] h-[54px] px-6 bg-accent hover:bg-hover text-primary text-[13px] uppercase font-semibold tracking-[.15em] transition-all

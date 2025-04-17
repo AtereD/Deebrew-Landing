@@ -10,13 +10,13 @@ const MenuItem = ({imgSrc, name, description, price}) => {
         </div>
         {/* txt */}
         <div className='flex flex-col flex-1 gap-2'>
-            <div className='flex justify-between gap-4 items-baseline'>
+            <div className='flex justify-between sm:gap-4 items-baseline gap-3'>
                 {/* name */}
-                <p className='uppercase font-primary font-semibold text-[22px] leaading-none text-primary'>{name}</p>
+                <p className='uppercase font-primary font-semibold sm:text-[22px] leaading-none text-primary text-[18px]'>{name}</p>
                 {/* border */}
                 <div className='border-dashed flex-1 border-b border-primary'></div>
                 {/* price */}
-                <p className='leading-none font-primary font-semibold text-[30px] text-primary'>{price.toFixed(2)}</p>
+                <p className='leading-none font-primary font-semibold sm:text-[30px] text-primary'>{price.toFixed(2)}</p>
             </div>
             <p className=''>{description}</p>
         </div>
