@@ -2,6 +2,7 @@
 
 import Separator from "./Separator";
 import Badge from "./Badge";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -37,7 +38,9 @@ const Hero = () => {
             Savor the comfort of great coffee in our inviting space, where each
             cup is brewed with love and a touch of magic.
           </p>
+          <Link href="#menu">
           <button className="btn">Our Menu</button>
+          </Link>
         </div>
       </div>
     </section>
