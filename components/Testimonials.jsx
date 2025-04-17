@@ -37,12 +37,12 @@ const Testimonials = () => {
               <SwiperSlide key={index} className="w-full h-full">
                 <div className="flex justify-center h-full xl:pt-14">
                   <div className="md:max-w-[60%] max-w-[80%] text-primary">
-                    <IoMdQuote className="text-6xl text-primary mb-12 mx-auto " />
+                    <IoMdQuote className="text-6xl text-primary mb-10 mx-auto " />
                     <p className="text-2xl font-secondaary text-center mb-8">
                       {person.message}
                     </p>
                     <div className="text-center">
-                      <p className="text-xl font-bold mb-2">{person.name}</p>
+                      <p className="text-xl font-bold">{person.name}</p>
                       <p className="text-secondary">{person.profession}</p>
                     </div>
                   </div>
